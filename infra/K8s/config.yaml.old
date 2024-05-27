@@ -1,0 +1,8 @@
+apiVersion: v1 #specifies the set of objects we need from K8s
+kind: Pod #the type of object we want to create
+metadata: #config options for the object we want to create
+  name: posts #name for the pod
+spec: #exact attributes for object we are about to create
+  containers: #we can create many containers in a single pod
+    - name: posts #container name
+      image: ananthuks9526dev/posts_service:0.0.1 #image we want to use
